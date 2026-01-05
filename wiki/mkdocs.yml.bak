@@ -1,0 +1,67 @@
+site_name: XDforensics-Wiki
+extra:
+  search:
+    language: 'jp'
+nav:
+    - Welcome :
+        - About : index.md
+        - Laws and Regulations : law.md
+        - Preparation : preparation.md
+    - Classification : 
+        - Windows: win.md
+        - Linux : 
+            - Linux系统基础 : Linux1.md
+            - Linux应用程序 : linux2.md
+            - Linux服务器 : linux3.md
+            - 取证大师分析Linux镜像的方法 : linux4.md
+            - 题目示例 : linux5.md
+        - MacOS : mac.md
+        - Mobile Devices : mobile.md
+        - Packet Analysis : pac.md
+        - Others : others.md
+    - Write Up :
+        - 2020美亚杯团体赛 : 
+            - Zello&Xeno服务器部分 : Zello&Xeno.md
+            - Daniel部分 : Daniel.md
+            - Bob部分 : meiya2020ttBob.md
+            - Cole部分 : meiya2020ttcole.md
+        - 2020长安杯 : imgca2020.md
+        - 2019长安杯 : 2019caWriteUp.md
+        - 2021美亚杯个人赛 : Meiya2021WP_Indivdual.md
+        - 2021美亚杯团体赛 : Meuya2021_Group_Review.md
+        - 2021长安杯 : 2021caWriteUp.md
+        - 2022长安杯 : ChanganCup2022.md
+        - 2022美亚杯个人赛 : MeiyaCup2022Indivi.md
+        - 2022美亚杯团体赛 : MeiyaCup2022Group.md
+        - 2023盘古石杯初赛 : PGS2023Pre.md
+
+theme:
+  name: 'material'
+  feature:
+    tabs: true
+  language: 'zh'
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: false
+  - toc:
+      permalink: true
+  - footnotes
+  - meta
+  - def_list
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_png
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist
+  - pymdownx.tilde
