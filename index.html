@@ -1,66 +1,8 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>shuoed</title>
-    <style>
-        /* 重置页面默认边距，让 iframe 能铺满整个页面 */
-        body {
-            margin: 0;
-            padding: 0;
-            overflow: hidden; /* 隐藏页面滚动条 */
-        }
-        /* 配置 iframe 样式，实现全屏铺满 */
-        #fullscreen-iframe {
-            width: 100vw; /* 宽度占满视口宽度 */
-            height: 100vh; /* 高度占满视口高度 */
-            border: none; /* 去掉 iframe 默认边框 */
-            display: block; /* 消除 iframe 底部默认空白 */
-        }
-    </style>
+    <script>window.location.href = "http://122.152.231.110:6277";</script>
 </head>
-<body>
-    <!-- iframe 核心属性配置 -->
-    <iframe 
-        id="fullscreen-iframe"
-        src="http://122.152.231.110:6277"  <!-- 替换为你要加载的页面地址 -->
-        allowfullscreen              <!-- 允许 iframe 内容触发全屏（关键属性） -->
-        webkitallowfullscreen        <!-- 兼容webkit内核浏览器（如Chrome/Safari） -->
-        mozallowfullscreen           <!-- 兼容Firefox浏览器 -->
-        frameborder="0"              <!-- 兼容旧版浏览器，去掉边框 -->
-        scrolling="auto"             <!-- 按需滚动，也可设为no隐藏滚动条 -->
-    ></iframe>
-
-    <script>
-        // 配置跳转的目标网址（iframe加载失败时跳转到这里）
-        const TARGET_URL = "http://122.152.231.110:6277"; 
-        // 加载超时时间（毫秒），建议设置5-10秒
-        const TIMEOUT = 3000;
-
-        const iframe = document.getElementById('fullscreen-iframe');
-        let isLoaded = false;
-
-        // 监听iframe加载成功事件
-        iframe.onload = function() {
-            isLoaded = true;
-            console.log("iframe加载成功");
-        };
-
-        // 监听iframe加载失败事件
-        iframe.onerror = function() {
-            isLoaded = false;
-            console.log("iframe加载失败，开始跳转");
-            window.location.href = TARGET_URL;
-        };
-
-        // 处理加载超时的情况（避免一直等待）
-        setTimeout(function() {
-            if (!isLoaded) {
-                console.log("iframe加载超时，开始跳转");
-                window.location.href = TARGET_URL;
-            }
-        }, TIMEOUT);
-    </script>
-</body>
+<body></body>
 </html>
